@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: mxJMySpell
 Bundle-SymbolicName: de.mxro.jmyspell
-Bundle-Version: 0.0.1.SNAPSHOT
+Bundle-Version: 0.0.1
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: de.mxro.filesystem,
  de.mxro.utils,
