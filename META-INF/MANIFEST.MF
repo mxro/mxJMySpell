@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: mxJMySpell
-Bundle-SymbolicName: de.mxro.jmyspell
+Bundle-SymbolicName: mxJMySpell;singleton:=true
 Bundle-Version: 0.0.2.SNAPSHOT
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: de.mxro.filesystem,
@@ -9,6 +9,5 @@ Import-Package: de.mxro.filesystem,
  de.mxro.utils.application,
  de.mxro.utils.background,
  de.mxro.utils.log
-Bundle-ClassPath: src/main/resources/jmyspell.jar,
- .
 Export-Package: de.mxro.jmyspell
+Bundle-ClassPath: .
