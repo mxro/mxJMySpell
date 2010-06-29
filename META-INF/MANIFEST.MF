@@ -1,13 +1,20 @@
 Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
+Export-Package: de.mxro.jmyspell;uses:="javax.swing.text,de.mxro.utils
+ .background,de.mxro.utils,de.mxro.utils.application,de.mxro.filesyste
+ m,de.mxro.utils.log"
+Embed-Directory: target/dependency
+Bundle-ClassPath: .,target/dependency/jmyspell-1.0.jar
+Built-By: mx
+Tool: Bnd-0.0.357
 Bundle-Name: mxJMySpell
-Bundle-SymbolicName: mxJMySpell;singleton:=true
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_20
 Bundle-Version: 0.0.2.SNAPSHOT
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Import-Package: de.mxro.filesystem,
- de.mxro.utils,
- de.mxro.utils.application,
- de.mxro.utils.background,
- de.mxro.utils.log
-Export-Package: de.mxro.jmyspell
-Bundle-ClassPath: .
+Bnd-LastModified: 1277785180739
+Bundle-ManifestVersion: 2
+Import-Package: de.mxro.filesystem,de.mxro.jmyspell,de.mxro.utils,de.m
+ xro.utils.application,de.mxro.utils.background,de.mxro.utils.log,java
+ x.swing,javax.swing.border,javax.swing.event,javax.swing.text
+Embed-Dependency: jmyspell;inline=false
+Bundle-SymbolicName: mxJMySpell
+

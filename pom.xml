@@ -15,7 +15,7 @@
 		<module.serviceDefinitions>
 		</module.serviceDefinitions>
 
-		<module.embeddedDependencies>jmyspell;scope=compile|runtime|provided;inline=false
+		<module.embeddedDependencies>jmyspell;inline=false
 		</module.embeddedDependencies>
 		 <module.unpackDependencyGroups>
 		</module.unpackDependencyGroups>
@@ -29,7 +29,7 @@
   	  <groupId>org.dts.spell</groupId>
 	  <artifactId>jmyspell</artifactId>
 	  <version>1.0</version>
-	  <scope>provided</scope>
+	  
   	</dependency>
   	<dependency>
   		<groupId>de.mxro.utils</groupId>
@@ -159,6 +159,29 @@
 				</configuration>
 			</plugin>
       
+      <!-- 
+      Keep the MANIFEST.MF used by eclipse in sync with the
+      MANIFEST.MF created by the maven bundle plugin
+       -->
+      <plugin>
+           <artifactId>maven-antrun-plugin</artifactId>
+           <executions>
+             <execution>
+               <phase>package</phase>
+               <goals>
+                 <goal>run</goal>
+               </goals>
+               <configuration>
+                 <tasks>
+                   <delete file="${basedir}/META-INF/MANIFEST.MF"/>
+                   <copy file="target/classes/META-INF/MANIFEST.MF"
+                         tofile="${basedir}/META-INF/MANIFEST.MF"/>
+                 </tasks>
+               </configuration>
+             </execution>
+           </executions>
+         </plugin>
+      
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
@@ -166,16 +189,6 @@
           <target>1.6</target>
         </configuration>
       </plugin>
-      
-      <!-- <plugin>
-      	<groupId>org.apache.maven.plugins</groupId>
-      	<artifactId>maven-jar-plugin</artifactId>
-      	<configuration>
-      		<archive>
-      			<manifestFile>META-INF/MANIFEST.MF</manifestFile>
-      		</archive>
-        </configuration>
-      </plugin> -->
     </plugins>
   </build>
   

@@ -17,5 +17,11 @@
     <nature>org.eclipse.jdt.core.javanature</nature>
     <nature>org.eclipse.pde.PluginNature</nature>
   </natures>
-  <linkedResources/>
+  <linkedResources>
+    <link>
+      <name>jmyspell-1.0.jar</name>
+      <type>1</type>
+      <location>/Users/mx/.m2/repository/org/dts/spell/jmyspell/1.0/jmyspell-1.0.jar</location>
+    </link>
+  </linkedResources>
 </projectDescription>
