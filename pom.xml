@@ -10,7 +10,7 @@
  de.mxro.utils.background,
  de.mxro.utils.log,*
 		</module.importedPackages>
-		<module.exportedPackages>de.mxro.jmyspell
+		<module.exportedPackages>de.mxro.jmyspell, org.dts.spell
 		</module.exportedPackages>
 		<module.serviceDefinitions>
 		</module.serviceDefinitions>

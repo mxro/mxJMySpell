@@ -1,7 +1,12 @@
 Manifest-Version: 1.0
-Export-Package: de.mxro.jmyspell;uses:="javax.swing.text,de.mxro.utils
- .background,de.mxro.utils,de.mxro.utils.application,de.mxro.filesyste
- m,de.mxro.utils.log"
+Export-Package: de.mxro.jmyspell;
+  uses:="javax.swing.text,
+   de.mxro.utils.background,
+   de.mxro.utils,
+   de.mxro.utils.application,
+   de.mxro.filesystem,
+   de.mxro.utils.log",
+ org.dts.spell
 Embed-Directory: target/dependency
 Bundle-ClassPath: .,target/dependency/jmyspell-1.0.jar
 Built-By: mx
