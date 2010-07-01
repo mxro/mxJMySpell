@@ -10,12 +10,13 @@
  de.mxro.utils.background,
  de.mxro.utils.log,*
 		</module.importedPackages>
-		<module.exportedPackages>de.mxro.jmyspell, org.dts.spell
+		<module.exportedPackages>de.mxro.jmyspell
 		</module.exportedPackages>
+		<module.exportedContents>org.dts.spell</module.exportedContents>
 		<module.serviceDefinitions>
 		</module.serviceDefinitions>
 
-		<module.embeddedDependencies>jmyspell;inline=false
+		<module.embeddedDependencies>jmyspell;inline=true
 		</module.embeddedDependencies>
 		 <module.unpackDependencyGroups>
 		</module.unpackDependencyGroups>
@@ -102,6 +103,7 @@
 						<Embed-Directory>target/dependency</Embed-Directory>
 						<Import-Package>${module.importedPackages}</Import-Package>
 						<Export-Package>${module.exportedPackages}</Export-Package>
+						<_exportcontents>${module.exportedContents}</_exportcontents>
 					</instructions>
 				</configuration>
 			</plugin>
