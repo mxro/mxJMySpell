@@ -11,9 +11,9 @@
  de.mxro.utils.background,
  de.mxro.utils.log,*
 		</module.importedPackages>
-		<module.exportedPackages>de.mxro.jmyspell
+		<module.exportedPackages>de.mxro.jmyspell,org.dts.spell,org.dts.spell.swing
 		</module.exportedPackages>
-		<module.exportedContents>org.dts.spell</module.exportedContents>
+		<module.exportedContents></module.exportedContents>
 		<module.serviceDefinitions>
 		</module.serviceDefinitions>
 
