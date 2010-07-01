@@ -4,7 +4,8 @@
 		<module.group>de.mxro.jmyspell</module.group>    <!--  Maven groupId -->
 		<module.name>mxJMySpell</module.name>             <!--  Maven artifactId -->
 		<module.version>0.0.2-SNAPSHOT</module.version> <!--  Maven artifact version -->
-		<module.importedPackages>de.mxro.filesystem,
+		<module.importedPackages>!org.dts.spell,
+		de.mxro.filesystem,
  de.mxro.utils,
  de.mxro.utils.application,
  de.mxro.utils.background,
@@ -112,21 +113,6 @@
 				<artifactId>maven-dependency-plugin</artifactId>
 
 				<executions>
-					<!--
-						This additional execution can extract all the JARs of the
-						dependencies
-					-->
-					<!-- <execution>
-						<id>unpack-dependencies</id>
-						<phase>generate-resources</phase>
-						<goals>
-							<goal>unpack-dependencies</goal>
-						</goals>
-						<configuration>
-							<includeGroupIds>${module.unpackDependencyGroups}
-							</includeGroupIds>
-						</configuration>
-					</execution>-->
 
 					<execution>
 						<id>copy-dependencies</id>
