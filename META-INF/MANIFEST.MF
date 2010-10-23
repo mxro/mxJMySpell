@@ -6,18 +6,18 @@ Export-Package: de.mxro.jmyspell;uses:="javax.swing.text,org.dts.spell
  ll,javax.swing.text,javax.swing.event"
 Embed-Directory: target/dependency
 Ignore-Package: org.dts.spell
-Built-By: mx
+Built-By: Max
 Tool: Bnd-0.0.357
 Bundle-Name: mxJMySpell
 Created-By: Apache Maven Bundle Plugin
-Build-Jdk: 1.6.0_20
+Build-Jdk: 1.6.0_22
 Bundle-Version: 0.0.2.SNAPSHOT
-Bnd-LastModified: 1277956812986
+Bnd-LastModified: 1287778769612
 Bundle-ManifestVersion: 2
 Import-Package: de.mxro.filesystem,de.mxro.jmyspell,de.mxro.utils,de.m
  xro.utils.application,de.mxro.utils.background,de.mxro.utils.log,java
  x.swing,javax.swing.border,javax.swing.event,javax.swing.text,org.dts
  .spell.swing
-Embed-Dependency: jmyspell;inline=true
 Bundle-SymbolicName: mxJMySpell
+Embed-Dependency: jmyspell;inline=true
 
