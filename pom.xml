@@ -17,7 +17,7 @@
 		<module.serviceDefinitions>
 		</module.serviceDefinitions>
 
-		<module.embeddedDependencies>jmyspell;inline=true
+		<module.embeddedDependencies>jmyspell
 		</module.embeddedDependencies>
 		 <module.unpackDependencyGroups>
 		</module.unpackDependencyGroups>
@@ -122,6 +122,20 @@
 						</goals>
 						<configuration>
 							<outputDirectory>${basedir}</outputDirectory>
+							<overWriteReleases>false</overWriteReleases>
+							<overWriteSnapshots>false</overWriteSnapshots>
+							<overWriteIfNewer>true</overWriteIfNewer>
+						</configuration>
+					</execution>
+					 <execution>
+						<id>copy-dependencies2</id>
+						<phase>process-sources</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<!-- <includeArtifactIds>${module.embeddedDependencies}</includeArtifactIds>-->
+							<outputDirectory>${basedir}/target/dependency</outputDirectory>
 							<overWriteReleases>false</overWriteReleases>
 							<overWriteSnapshots>false</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
