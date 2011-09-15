@@ -29,7 +29,7 @@
 		<link>
 			<name>jmyspell-1.0.jar</name>
 			<type>1</type>
-			<location>C:/Users/Max/.m2/repository/org/dts/spell/jmyspell/1.0/jmyspell-1.0.jar</location>
+			<location>M:/LocalMavenRepository/repository/org/dts/spell/jmyspell/1.0/jmyspell-1.0.jar</location>
 		</link>
 	</linkedResources>
 </projectDescription>
