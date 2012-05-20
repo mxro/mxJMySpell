@@ -7,13 +7,13 @@ Export-Package: de.mxro.jmyspell;uses:="javax.swing.text,org.dts.spell
 Embed-Directory: target/dependency
 Ignore-Package: org.dts.spell
 Bundle-ClassPath: .,target/dependency/jmyspell-1.0.jar
-Built-By: mroh004
+Built-By: Max
 Tool: Bnd-0.0.357
 Bundle-Name: mxJMySpell
 Created-By: Apache Maven Bundle Plugin
-Build-Jdk: 1.6.0_27
+Build-Jdk: 1.6.0_24
 Bundle-Version: 0.0.2.SNAPSHOT
-Bnd-LastModified: 1316055345210
+Bnd-LastModified: 1337490321167
 Bundle-ManifestVersion: 2
 Embed-Dependency: jmyspell
 Import-Package: de.mxro.filesystem,de.mxro.jmyspell,de.mxro.utils,de.m
